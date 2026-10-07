@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAZMI BUILDERS & DEVELOPERS | Home Solutions Faisalabad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#fef9c3',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            custom: '#d4af37'
+                        },
+                        dark: {
+                            950: '#070a11',
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                            600: '#475569'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fffbeb 0%, #facc15 30%, #d4af37 70%, #fef08a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #f59e0b 0%, #d4af37 50%, #92400e 100%);
+        }
+        .gold-card-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        .gold-card-border:hover {
+            border-color: rgba(250, 204, 21, 0.8);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
+            transform: translateY(-4px);
+        }
+        .pulse-glow {
+            animation: pulseGlow 2.5s infinite;
+        }
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 18px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-dark-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-dark-950">
+
+    <!-- TOP LOCATION NOTICE -->
+    <div class="bg-gradient-to-r from-amber-900 via-amber-600 to-amber-900 text-slate-950 px-4 py-2 text-center text-xs sm:text-sm font-black flex items-center justify-center gap-2 shadow-lg sticky top-0 z-50">
+        <i class="fa-solid fa-location-dot animate-bounce text-sm"></i>
+        <span>SERVICE NOTICE: Deliveries & Construction Services are STRICTLY LIMITED to FAISALABAD (FSD) CITY!</span>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="bg-dark-900/95 backdrop-blur-md border-b border-dark-700/80 sticky top-8 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO WITH EMBEDDED ATTRACTIVE VECTOR CREST -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-13 h-13 rounded-2xl bg-dark-950 border border-gold-custom/50 flex items-center justify-center shadow-lg shadow-gold-custom/10 group-hover:scale-105 transition-transform p-1">
+                        <svg viewBox="0 0 200 200" class="w-12 h-12">
+                            <circle cx="100" cy="100" r="92" fill="none" stroke="#D4AF37" stroke-width="5"/>
+                            <circle cx="100" cy="100" r="85" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <!-- Building Vector -->
+                            <path d="M100 35 L125 70 L125 105 L75 105 L75 70 Z" fill="none" stroke="#F3E5AB" stroke-width="3"/>
+                            <rect x="90" y="50" width="20" height="55" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <!-- Triple Roof Contours -->
+                            <path d="M50 115 L100 75 L150 115" fill="none" stroke="#D4AF37" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M68 115 L100 89 L132 115" fill="none" stroke="#F3E5AB" stroke-width="3"/>
+                            <!-- Monogram -->
+                            <text x="100" y="152" font-family="'Cinzel', serif" font-size="40" font-weight="800" fill="#D4AF37" text-anchor="middle">MK</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-heading font-black text-lg md:text-2xl tracking-wider gold-gradient-text block leading-none">KAZMI BUILDERS</span>
+                        <span class="text-[9px] sm:text-[11px] text-slate-300 font-extrabold uppercase tracking-widest block mt-1 bg-dark-800/80 px-2 py-0.5 rounded border border-gold-custom/30">& DEVELOPERS</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+                    <a href="#home" class="text-slate-200 hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#about" class="text-slate-200 hover:text-gold-400 transition-colors">About Us</a>
+                    <a href="#services" class="text-slate-200 hover:text-gold-400 transition-colors">Services</a>
+                    <a href="#contact" class="text-slate-200 hover:text-gold-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- HEADER ACTION BUTTONS -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:03259341050" class="px-4 py-2.5 rounded-xl border border-gold-custom/50 text-gold-400 hover:bg-gold-custom/10 font-bold text-xs sm:text-sm flex items-center gap-2 transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>03259341050</span>
+                    </a>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20am%20from%20Faisalabad%20and%20need%20construction%20services." target="_blank" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-emerald-600/20 transition-all">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- MOBILE HAMBURGER -->
+                <button id="menu-toggle" class="lg:hidden text-slate-200 hover:text-gold-400 p-2 text-2xl focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark-900 border-b border-dark-700 px-6 py-6 space-y-4">
+            <a href="#home" class="block text-slate-200 hover:text-gold-400 font-semibold border-b border-dark-800 pb-2">Home</a>
+            <a href="#about" class="block text-slate-200 hover:text-gold-400 font-semibold border-b border-dark-800 pb-2">About Us</a>
+            <a href="#services" class="block text-slate-200 hover:text-gold-400 font-semibold border-b border-dark-800 pb-2">Our Services</a>
+            <a href="#contact" class="block text-slate-200 hover:text-gold-400 font-semibold">Contact Us</a>
+
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="tel:03259341050" class="w-full text-center py-3 rounded-xl border border-gold-custom/50 text-gold-400 font-bold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call: 03259341050
+                </a>
+                <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20am%20from%20Faisalabad%20and%20need%20construction%20services." target="_blank" class="w-full text-center py-3 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center py-16 px-4 overflow-hidden border-b border-dark-800">
+        <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/80 to-dark-900/90"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8">
+            
+            <div class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-dark-900/90 border border-gold-custom/60 text-gold-300 text-xs sm:text-sm font-bold shadow-xl">
+                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                <span>*Servicing Faisalabad (FSD) Only*</span>
+            </div>
+
+            <!-- HERO MAIN HEADLINE -->
+            <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight text-white leading-tight">
+                BUILDING DREAMS,<br>
+                <span class="gold-gradient-text">DELIVERING QUALITY</span>
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-2xl max-w-3xl mx-auto font-light leading-relaxed">
+                Premium Construction & Finishing Services Across Faisalabad
+            </p>
+
+            <div class="p-4 bg-dark-900/90 rounded-2xl border border-dark-700 max-w-xl mx-auto flex flex-wrap items-center justify-around gap-4 text-xs sm:text-sm font-bold text-amber-300 shadow-xl">
+                <span><i class="fa-solid fa-circle-check text-gold-400 me-1"></i> Quality Work Our Priority</span>
+                <span><i class="fa-solid fa-circle-check text-gold-400 me-1"></i> Your Satisfaction Our Success</span>
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="tel:03259341050" class="w-full sm:w-auto px-8 py-4 rounded-xl gold-gradient-bg text-slate-950 font-extrabold text-base sm:text-lg flex items-center justify-center gap-3 shadow-2xl pulse-glow hover:opacity-95 transition-all">
+                    <i class="fa-solid fa-phone text-xl"></i>
+                    <span>Call Now: 03259341050</span>
+                </a>
+                <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20am%20from%20Faisalabad%20and%20need%20construction%20services." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl border-2 border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 font-bold text-base sm:text-lg flex items-center justify-center gap-3 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Contact on WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- OWNER FOOTNOTE -->
+            <div class="pt-4 text-slate-400 text-xs sm:text-sm font-semibold">
+                Direct Supervision by <span class="text-gold-400 underline">Mr. Kazmi (Owner)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS STRIP -->
+    <section id="about" class="py-10 bg-dark-900 border-b border-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                
+                <div class="p-4 rounded-2xl bg-dark-800/60 border border-dark-700 space-y-2">
+                    <div class="text-gold-400 text-3xl"><i class="fa-solid fa-award"></i></div>
+                    <div class="font-bold text-white text-xs sm:text-sm">Best Quality</div>
+                    <div class="text-[10px] text-slate-400">Superior Finish</div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-dark-800/60 border border-dark-700 space-y-2">
+                    <div class="text-gold-400 text-3xl"><i class="fa-solid fa-users-gear"></i></div>
+                    <div class="font-bold text-white text-xs sm:text-sm">Professional Team</div>
+                    <div class="text-[10px] text-slate-400">Skilled Craftsmen</div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-dark-800/60 border border-dark-700 space-y-2">
+                    <div class="text-gold-400 text-3xl"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="font-bold text-white text-xs sm:text-sm">Affordable Prices</div>
+                    <div class="text-[10px] text-slate-400">Honest Rates</div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-dark-800/60 border border-dark-700 space-y-2">
+                    <div class="text-gold-400 text-3xl"><i class="fa-solid fa-map-location"></i></div>
+                    <div class="font-bold text-white text-xs sm:text-sm">Faisalabad Service</div>
+                    <div class="text-[10px] text-slate-400">Local Presence</div>
+                </div>
+
+                <div class="col-span-2 md:col-span-1 p-4 rounded-2xl bg-dark-800/60 border border-dark-700 space-y-2">
+                    <div class="text-gold-400 text-3xl"><i class="fa-solid fa-clock"></i></div>
+                    <div class="font-bold text-white text-xs sm:text-sm">On-Time Delivery</div>
+                    <div class="text-[10px] text-slate-400">Punctual Timelines</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-20 bg-dark-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Complete Building Solutions</span>
+                <h2 class="text-3xl sm:text-5xl font-heading font-extrabold text-white">Our Complete Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Tough Tiles | Doors | Glass Work | Mirrors | Interior & Exterior Finishing in Faisalabad</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- SERVICE CARD 1 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-border-all"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Tough Tiles</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Heavy-duty tough tiles for driveways, car porches, streets, and commercial areas across Faisalabad.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20need%20Tough%20Tiles%20service%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Tough Tiles</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 2 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-door-closed"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Doors (Metal Doors)</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Custom iron main gates, laser-cut security doors, and metal door framing built to order.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20need%20Metal%20Doors%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Metal Doors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 3 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-window-maximize"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Glass Work</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Tempered glass facades, glass partitions, modern stair railings, and commercial glass fronts.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20am%20looking%20for%20Glass%20Work%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Glass Work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 4 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-clone"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Mirrors</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Touch-sensor LED backlight mirrors, vanity mirrors, gym mirror walls, and custom bevel glass.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20need%20Mirrors%20installation%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Mirrors</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 5 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">House Construction</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Complete turn-key grey structure and finished residential home construction projects in FSD.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20want%20House%20Construction%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Construction</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 6 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Interior Finishing</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">False ceiling designs, media walls, tile flooring, interior painting, and luxury lighting setups.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20need%20Interior%20Finishing%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Interior</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 7 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Exterior Finishing</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Front elevation tile cladding, weather-shield painting, rock wall textures, and modern facades.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20need%20Exterior%20Finishing%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Exterior</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SERVICE CARD 8 -->
+                <div class="bg-dark-900 rounded-3xl p-6 gold-card-border flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-2xl mb-6 border border-gold-custom/30">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Professional Workmanship</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">Experienced masons, tile layers, steel welders, and painters directly supervised by Mr. Kazmi.</p>
+                    </div>
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20need%20Professional%20Workmanship%20in%20Faisalabad." target="_blank" class="pt-4 border-t border-dark-800 text-xs font-bold text-gold-400 flex items-center justify-between hover:text-white">
+                        <span>Inquire Workmanship</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION WITH WHATSAPP FORM -->
+    <section id="contact" class="py-20 bg-dark-950 border-t border-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- FOUNDER & CONTACT CARD -->
+                <div class="bg-gradient-to-br from-dark-900 via-dark-900 to-dark-800 rounded-3xl p-8 border border-gold-custom/40 shadow-2xl relative overflow-hidden space-y-6">
+                    <div class="flex items-center justify-between border-b border-dark-700 pb-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl gold-gradient-bg flex items-center justify-center text-slate-950 text-3xl font-black shadow-lg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-gold-400 uppercase tracking-widest block">Founder & Owner</span>
+                                <h3 class="text-3xl font-heading font-black text-white">Mr. Kazmi</h3>
+                                <span class="text-xs text-slate-400">KAZMI BUILDERS & DEVELOPERS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-2xl bg-dark-950/80 border border-dark-700 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Direct Call / WhatsApp</span>
+                                <span class="text-lg font-bold text-white">03259341050</span>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-dark-950/80 border border-dark-700 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Service Territory</span>
+                                <span class="text-sm font-bold text-amber-300">Servicing Faisalabad (FSD) Only</span>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-dark-950/80 border border-dark-700 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-gold-600/20 text-gold-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Company Tagline</span>
+                                <span class="text-sm font-bold text-gold-400">Your Satisfaction Our Success</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/923259341050?text=Salam%20Kazmi%20Builders!%20I%20am%20from%20Faisalabad%20and%20want%20to%20discuss%20my%20construction%20project." target="_blank" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base flex items-center justify-center gap-3 transition-all shadow-xl">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Direct WhatsApp Chat</span>
+                    </a>
+                </div>
+
+                <!-- WHATSAPP DIRECT FORM -->
+                <div class="bg-dark-900 rounded-3xl p-8 border border-dark-700 shadow-2xl space-y-6">
+                    <div>
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Inquire Instantly</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Send Project Inquiry</h3>
+                        <p class="text-xs text-slate-400 mt-1">Fill out the form below to generate a pre-filled WhatsApp message directly to Mr. Kazmi.</p>
+                    </div>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Your Full Name</label>
+                            <input type="text" id="cust-name" required placeholder="e.g. Tariq Mehmood" class="w-full px-4 py-3.5 rounded-xl bg-dark-950 border border-dark-700 text-white text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Faisalabad Area / Location</label>
+                            <input type="text" id="cust-location" required placeholder="e.g. Madina Town / Peoples Colony" class="w-full px-4 py-3.5 rounded-xl bg-dark-950 border border-dark-700 text-white text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Service Required</label>
+                            <select id="cust-service" class="w-full px-4 py-3.5 rounded-xl bg-dark-950 border border-dark-700 text-white text-sm focus:outline-none focus:border-gold-500">
+                                <option value="House Construction">House Construction</option>
+                                <option value="Tough Tiles">Tough Tiles</option>
+                                <option value="Doors (Metal Doors)">Doors (Metal Doors)</option>
+                                <option value="Glass Work">Glass Work</option>
+                                <option value="Mirrors">Mirrors</option>
+                                <option value="Interior Finishing">Interior Finishing</option>
+                                <option value="Exterior Finishing">Exterior Finishing</option>
+                                <option value="Professional Workmanship">Professional Workmanship</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Project Details / Message</label>
+                            <textarea id="cust-msg" rows="3" placeholder="Specify plot area or requirements..." class="w-full px-4 py-3.5 rounded-xl bg-dark-950 border border-dark-700 text-white text-sm focus:outline-none focus:border-gold-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl gold-gradient-bg text-slate-950 font-extrabold text-base flex items-center justify-center gap-3 transition-all shadow-lg hover:opacity-95">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Send WhatsApp Inquiry</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-950 border-t border-dark-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- FOOTER LOGO -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-dark-900 border border-gold-custom/50 flex items-center justify-center p-1">
+                        <svg viewBox="0 0 200 200" class="w-full h-full">
+                            <circle cx="100" cy="100" r="92" fill="none" stroke="#D4AF37" stroke-width="5"/>
+                            <circle cx="100" cy="100" r="85" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M100 35 L125 70 L125 105 L75 105 L75 70 Z" fill="none" stroke="#F3E5AB" stroke-width="3"/>
+                            <rect x="90" y="50" width="20" height="55" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <path d="M50 115 L100 75 L150 115" fill="none" stroke="#D4AF37" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M68 115 L100 89 L132 115" fill="none" stroke="#F3E5AB" stroke-width="3"/>
+                            <text x="100" y="152" font-family="'Cinzel', serif" font-size="40" font-weight="800" fill="#D4AF37" text-anchor="middle">MK</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-heading font-black text-base gold-gradient-text block leading-none">KAZMI BUILDERS</span>
+                        <span class="text-[9px] tracking-widest text-slate-400 uppercase">& DEVELOPERS</span>
+                    </div>
+                </a>
+
+                <div class="text-xs text-center md:text-right space-y-1">
+                    <div class="text-amber-400 font-bold">Owner: Mr. Kazmi | Phone: 03259341050</div>
+                    <div class="text-slate-500">*Servicing Faisalabad (FSD) Only*</div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 border-t border-dark-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 KAZMI BUILDERS & DEVELOPERS. All rights reserved.</p>
+                <p class="text-gold-400 font-semibold">Your Satisfaction Our Success</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // MOBILE MENU TOGGLE LOGIC
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // CONTACT FORM TO WHATSAPP DISPATCHER
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('cust-name').value;
+            const location = document.getElementById('cust-location').value;
+            const service = document.getElementById('cust-service').value;
+            const msg = document.getElementById('cust-msg').value;
+
+            const whatsappMessage = `*New Construction Inquiry - Faisalabad*\n\n*Name:* ${name}\n*Location:* ${location}\n*Service:* ${service}\n*Message:* ${msg}`;
+            
+            window.open(`https://wa.me/923259341050?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        });
+    </script>
+</body>
+</html>
